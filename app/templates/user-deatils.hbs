@@ -14,7 +14,7 @@
             <b> CustomerID:</b>
         </div>
         <div class="group" style="width:4cm;margin-top:-3mm">
-            {{validated-input type="text" model=this valuePath='CustomerID' placeholder="CustomerID" required=""}}
+            {{input type="text" model=this valuePath='CustomerID' placeholder="CustomerID" required=""}}
 
         </div>
 
@@ -26,7 +26,7 @@
             <b> CustomerName:</b>
      </div>
         <div class="group" style="width:4cm;margin-top:-3mm">
-            {{validated-input type="text" model=this valuePath='CustomerName' placeholder="CustomerName" required=""}}
+            {{input type="text" model=this valuePath='CustomerName' placeholder="CustomerName" required=""}}
 
         </div>
 </div>
@@ -46,7 +46,7 @@
         <b> Phone:</b>
     </div>
     <div class="group" style="width:4cm;margin-top:-3mm">
-        {{validated-input type="text" model=this valuePath='Phone' placeholder="Phone" required=""}}
+        {{input type="text" model=this valuePath='Phone' placeholder="Phone" required=""}}
 
     </div>
 
@@ -56,7 +56,7 @@
         <b> IncomeDetail:</b>
     </div>
     <div class="group" style="width:4cm;margin-top:-3mm">
-        {{validated-input type="text" model=this valuePath='IncomeDetail' placeholder="IncomeDetail" required=""}}
+        {{input type="text" model=this valuePath='IncomeDetail' placeholder="IncomeDetail" required=""}}
 
     </div>
 
@@ -67,7 +67,7 @@
         <b> Address:</b>
     </div>
     <div class="group" style="width:4cm;margin-top:-3mm">
-        {{validated-input type="text" model=this valuePath='CustomerID' placeholder="CustomerID" required=""}}
+        {{input type="text" model=this valuePath='CustomerID' placeholder="CustomerID" required=""}}
 
     </div>
 </div>
@@ -77,7 +77,7 @@
         <b> officeaddress:</b>
     </div>
     <div class="group" style="width:4cm;margin-top:-3mm">
-        {{validated-input type="text" model=this valuePath='CustomerID' placeholder="CustomerID" required=""}}
+        {{input type="text" model=this valuePath='CustomerID' placeholder="CustomerID" required=""}}
 
     </div>
 </div>
@@ -95,7 +95,7 @@
         <b> Action:</b>
     </div>
     <div class="group" style="width:4cm;margin-top:-3mm">
-        {{validated-input type="text" model=this valuePath='CustomerID' placeholder="CustomerID" required=""}}
+        {{input type="text" model=this valuePath='CustomerID' placeholder="CustomerID" required=""}}
 
     </div>
 
@@ -106,7 +106,7 @@
         <b> outcome:</b>
     </div>
     <div class="group" style="width:4cm;margin-top:-3mm">
-        {{validated-input type="text" model=this valuePath='CustomerID' placeholder="CustomerID" required=""}}
+        {{input type="text" model=this valuePath='CustomerID' placeholder="CustomerID" required=""}}
 
     </div>
 </div>
@@ -119,22 +119,13 @@
         <b> followup:</b>
     </div>
     <div class="group" style="width:4cm;margin-top:-3mm">
-        {{validated-input type="text" model=this valuePath='CustomerID' placeholder="CustomerID" required=""}}
+        {{input type="text" model=this valuePath='CustomerID' placeholder="CustomerID" required=""}}
 
     </div>
 
 
 </div>
 
-
-<div id="NR-reactangle">
-    {{#pl-uploader for="upload_file" runtimes="html5 flash silverlight" onfileadd="uploadDoc" as |queue|}}
-    <a id="upload_file" style="font-size:18px">
-        <p style="margin-top:3mm"> <img src="assets/images/upload.svg" alt="Smiley face" width="20" height="20" style="margin-bottom:3mm">&nbsp; Choose File to Upload</p>
-    </a>
-    {{/pl-uploader}}
-
-</div>
 <div class="row">
     <div class="col-sm-6">
     </div>
