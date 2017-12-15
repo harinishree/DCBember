@@ -57,7 +57,8 @@ th {
               <th>last date visit</th>
               </tr>
               <tr>
-                  <td>{{CustomerDetail.custId}}</td>
+                  <td>{{#link-to 'userDeatils'}}
+                      <i style="color:#2d8cff ">{{CustomerDetail.custId}}</i>{{/link-to}}</td>
                   <td>{{CustomerDetail.name}}</td>
                   <td>{{CustomerDetail.dob}}</td>
                   <td>{{CustomerDetail.phone}}</td>
@@ -66,6 +67,7 @@ th {
                   </tr>
               </table>
               {{/each}}
+              
    </div>
 </div>
 <a href="#" class="go-top">Scroll to Top</a>

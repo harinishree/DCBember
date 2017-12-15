@@ -4,7 +4,7 @@ export default Ember.Route.extend({
     model(){
         var custId = this.get('custId');
         console.log(custId);
-          var name = this.get('name');
+        var name = this.get('name');
         console.log(name);
         var phone = this.get('phone');
         var noOfVIsits = this.get('noOfVIsits');
