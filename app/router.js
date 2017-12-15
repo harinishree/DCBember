@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('home');
   this.route('head');
   this.route('userDeatils');
+  this.route('visitupdate');
 });
 
 export default Router;

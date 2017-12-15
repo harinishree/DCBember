@@ -36,10 +36,10 @@ export default Ember.Route.extend({
         data: JSON.stringify(data),
         success: function(response) {
         console.log(JSON.stringify(response));
-        var id=response.message
-        sessionStorage.setItem('id',id);
-        mycontroller.controllerFor('home').set('id',id)    
-        console.log(id)
+        var CustomerDetail=response.message
+        sessionStorage.setItem('CustomerDetail',CustomerDetail);
+        mycontroller.controllerFor('home').set('CustomerDetail',CustomerDetail)    
+        console.log(CustomerDetail)
        console.log('DEBUG: GET Enquiries OK');
        
      }

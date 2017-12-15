@@ -1,4 +1,5 @@
 
+
 <script>
    $(document).ready(function() {
        // Show or hide the sticky footer button
@@ -45,31 +46,9 @@ th {
     height: 50px;
 }
 </style>
-   <div class="mytable">     
-       {{#each CustomerDetail as |CustomerDetail|}}
-              <table>
-              <tr>
-              <th>cust ID</th>
-              <th>Name</th>
-              <th>DOB</th>
-              <th>Phone No.</th>
-              <th>No. of visit</th>
-              <th>last date visit</th>
-              </tr>
-              <tr>
-                  <td>{{#link-to 'userDeatils'}}
-                      <i style="color:#2d8cff ">{{CustomerDetail.custId}}</i>{{/link-to}}</td>
-                  <td>{{CustomerDetail.name}}</td>
-                  <td>{{CustomerDetail.dob}}</td>
-                  <td>{{CustomerDetail.phone}}</td>
-                  <td>{{CustomerDetail.noOfVIsits}}</td>
-                  <td>{{CustomerDetail.lastVisitedDate}}</td>
-                  </tr>
-              </table>
-              {{/each}}
-              
+   <div class="">
+       CUSTOMER ID{{custId}}
+            
    </div>
 </div>
 <a href="#" class="go-top">Scroll to Top</a>
-
-{{outlet}}
