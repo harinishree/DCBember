@@ -1,2 +1,73 @@
 
+<script>
+   $(document).ready(function() {
+       // Show or hide the sticky footer button
+       $(window).scroll(function() {
+           if ($(this).scrollTop() > 200) {
+               $('.go-top').fadeIn(200);
+           } else {
+               $('.go-top').fadeOut(200);
+           }
+       });
+       // Animate the scroll to top
+       $('.go-top').click(function(event) {
+           event.preventDefault();
+           $('html, body').animate({
+               scrollTop: 0
+           }, 300);
+       });
+      
+   });
+</script>
+<div id="historyheader">
+   <div id="cont-lock" style="text-align:center ;color:white ">
+      <h1><b>Dashboard</b></h1>
+   </div>
+</div>
+<div class="dashbord-container">
+   <br/>
+   <h3 style="text-align:center;color:#808080 "><b>Total customer id</b></h3>
+   {{!-- <div class="container">
+      <br/>
+      <h6 ></h6>
+   </div> --}}
+   <style>
+table, td, th {
+    border: 1px solid grey;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+</style>
+   <div class="mytable">     
+       {{#each id as |CustomerDetail|}}
+              <table>
+              <tr>
+              <th>cust ID</th>
+              <th>Name</th>
+              <th>DOB</th>
+              <th>Phone No.</th>
+              <th>No. of visit</th>
+              <th>last date visit</th>
+              </tr>
+              <tr>
+                  <td>{{CustomerDetail.custId}}</td>
+                  <td>{{CustomerDetail.name}}</td>
+                  <td>{{CustomerDetail.dob}}</td>
+                  <td>{{CustomerDetail.phone}}</td>
+                  <td>{{CustomerDetail.noOfVIsits}}</td>
+                  <td>{{CustomerDetail.lastVisitedDate}}</td>
+                  </tr>
+              </table>
+              {{/each}}
+   </div>
+</div>
+<a href="#" class="go-top">Scroll to Top</a>
+
 {{outlet}}
