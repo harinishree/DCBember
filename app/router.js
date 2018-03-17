@@ -9,8 +9,10 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('home');
   this.route('head');
-  this.route('userDeatils');
-  this.route('visitupdate');
+
+  this.route('SpecificPlace');
+  this.route('place');
+  
 });
 
 export default Router;
