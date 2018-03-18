@@ -12,7 +12,11 @@ Router.map(function() {
 
   this.route('SpecificPlace');
   this.route('place');
-  
+
+  this.route('oldreview');
+  this.route('eventcontact');
+  this.route('feedback');
+  this.route('mywallet');
 });
 
 export default Router;

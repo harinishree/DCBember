@@ -4,17 +4,33 @@
       <div class="navbar-header">
          {{#link-to 'home'}}   {{material-design-icon name='home'}} {{/link-to}}
       </div>
-      <ul class="nav navbar-nav">
-         <!--<li>{{#link-to 'sample'}}sample{{/link-to}}</li>-->
-           <!--- <li>{{#link-to 'anothersample'}}another sample{{/link-to}}</li>-->
-          <!--  <li><a href="http://www.youtube.com">Page 3</a></li>-->
-      </ul>
+   
+  <div class="navbar-collapse collapse">
+   
+    <ul class="nav navbar-nav navbar-right">
+      <li>hello, Mr. Alex</li>
+      {{!-- <li><a href="#contact">Right</a></li> --}}
+    </ul>
+  </div>
    </div>
 </nav>
+<style>
+  .navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+.navbar-toggle {
+    z-index:3;
+}
+  </style>
 
 <div class="bottom container-fluid">
-<div class="container">
+{{!-- <div class="container"> --}}
    {{outlet}}
-</div>
+{{!-- </div> --}}
 </div>
 

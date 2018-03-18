@@ -1,11 +1,68 @@
-<div class="row row-offcanvas row-offcanvas-right">
-
-        <div class="col-12 col-md-9">
+      
           {{!-- <p class="float-right hidden-md-up">
             <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
           </p> --}}
-          <div class="jumbotron">  
-              </div>
-              </div>
-              </div>
+         <div class="content">
+<h2><i>Explore More Attraction</i></h2>
+
+<div class="row">
+  <div class="column" style="">
+    <h2>{{#link-to 'oldreview'}}sufi dance{{/link-to}}</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="">
+     <img src="http://darter.in//wp-content/uploads/2013/09/rajasthan-photography-tour-32.jpg" class="responsive" alt="Cinque Terre"> 
+  
+</div>
+</div>
+<br>
+<div class="row">
+  <div class="column" style="">
+    <h2>Camel Ride</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="">
+     <img src="http://darter.in//wp-content/uploads/2013/09/rajasthan-photography-tour-32.jpg" class="responsive" alt="Cinque Terre"> 
+  
+</div>
+</div>
+<br>
+<div class="row">
+  <div class="column" style="">
+    <h2>Katputli Show</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="">
+     <img src="http://darter.in//wp-content/uploads/2013/09/rajasthan-photography-tour-32.jpg" class="responsive" alt="Cinque Terre"> 
+  
+</div>
+</div>
+    <style>
+      img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+
+   </div>
+      
 {{outlet}}

@@ -1,0 +1,294 @@
+<head>
+    <!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>      
+          
+         <div class="content">
+<h2><i>The Sufi Dance Event</i></h2>
+
+<h1>Mixed Column Layout</h1>
+<p>Resize the browser window to see the responsive effect (the columns will re-arrange its layout from four to two on screens that are less than 900px wide. <b>However</b>, on screens that are less than 600px wide, the columns will stack on top of each other instead of floating next to each other.)</p>
+
+
+{{!-- test --}}
+{{!-- 
+  <div class="row">
+    <div class="col">Column</div>
+  <div class="row">
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+    <div class="w-100"></div>
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+  </div>
+    <div class="col">Column</div>
+    <div class="w-100"></div>
+    <div class="col">Column</div>
+    <div class="col">Column</div>
+  </div> --}}
+
+{{!-- test --}}
+<div class="row">
+  <div class="column" style="background-color:grey">
+    <h1>{{#link-to 'feedback'}}Your Review{{/link-to}}</h1>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:grey">
+     <h1>Book</h1>
+    <p>Some text..</p>
+</div>
+</div>
+<br>
+<div class="row">
+  <div class="column" style="">
+    <h1>Location</h1>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="">
+      <h1 id="about">About this event</h1>
+      <script>
+
+          </script>
+    <p>Some text..</p>
+</div>
+</div>
+<br>
+<div class="row">
+  
+  <div class="column" style="background-color:#ccc;">
+    <h2>{{#link-to 'eventcontact'}}Contact us{{/link-to}}</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <h2>Column 4</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+<h1>Previous Reviews</h1>
+<div class="row">
+Top customer reviews
+ <p>Tourist: <span class="glyphicon glyphicon-user"></span>Alex gomes</p>
+ <br>
+ <style>
+.checked {
+    color: orange;
+}
+</style>
+{{!-- average --}}
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0 auto; /* Center website */
+    
+}
+
+.heading {
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 13%;
+    margin-top:10px;
+}
+
+.middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .side, .middle {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+}
+</style>
+
+
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.1 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+{{!-- average ratings --}}
+
+<h2>Star Rating</h2>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+3.0 out of 5 starsGreat sound, HDMI issues still - NO PROGRAMMABLE REMOTE<br>
+November 11, 2016<br>
+Style: TX-RZ3100|Verified Purchase
+Onkyo continues several trends with this latest model, and makes some new trends.
+
+Pros: Excellent sound, lots of clean power, THX certification, nice upgrade on streaming services, 3-year warranty and dedicated help line, nice app for remote control
+
+Cons: NO PROGRAMMABLE REMOTE, problematic HDMI features, proprietary speaker set up doesn't seem to be as good as previous models (Audyssey).
+
+If you want a great sounding receiver, but do not use HDMI-CEC features, don't care about a programmable remote, and can afford this unit - I think you will be very happy with it.
+
+That's the summary, for details - read on:
+
+This is my third top-level Onkyo receiver (I have also owned a Denon, Yamaha and Pioneer Elite). They have always been plagued with HDMI board issues. You have to reset receiver to get them to temporarily work correctly again. Which is annoying because you then have to reprogram all your radio presets and run the speaker set-up again. Way too finicky for this price level. I was hoping between its acquiring Pioneer and creating this new line of receiver - that these types of issues have been corrected. VERY disappointed they haven't. For example: When I first set up unit, the pass-through feature worked. Sometimes late at night (or when my wife wants to watch TV) you just don't want the receiver on. You should be able to just turn the TV and source on and it passes through. Well, once I tried to get HDMI to work through zone 2, this feature stopped working. I CAN turn the receiver on and back off and then it remembers to pass it through - again way too finicky. A reset will likely fix this. Previous models had so many problem with this, they were replacing boards for free. My Yamaha worked 100% of the time (but I don't think it sounds as good).
+
+I was also super bummed to find out they decided to cheap out by not providing a programmable remote. Maybe I am the exception and most customers would rather use their phones, multiple remotes, or pay extra for a universal. I prefer one factory remote that I can set up to work most devices in my system. For a unit at this price level this is VERY disappointing. Previous model for example was priced at $2,400, this one at $3,200. For record; upon complaining, Onkyo sent me last year's programmable remote for free, but it doesn't work well with this unit as they have changed a few things.
+
+For the speaker set up, I feel like it sets things a bit flat for my taste. I suppose that is the goal. But for example, on the Denon I had previously (Audyssey Platinum set up) the base bumps just a bit more, while still sounding very clean and not boomy. One source example is the theme song to the Netflix series, Narcos. It just has the really nice stand-up base I really enjoyed on the Denon. It falls a bit flat on this unit.
+
+Overall this unit is an improvement over previous models and it does sound really good. As always, Onkyo offers a good balance of power and sound, while offering a feature-rich unit. However, it appears it is business as usual with it being super finicky and not always working as advertised. I think I am going to return this unit and wait for the Denon 7000-series 11 channel to come out.
+Read less
+Comment| 71 people found this helpful. Was this review helpful to you?
+Yes
+ 
+No
+Report abuse
+</div>
+    <style>
+ 
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column  {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column  {
+        width: 50%;
+    }
+}
+</style>
+</style>
+
+   </div>
+      
+{{outlet}}
+

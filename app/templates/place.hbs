@@ -1,17 +1,130 @@
-<div class="row row-offcanvas row-offcanvas-right">
+{{!-- <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="http://darter.in//wp-content/uploads/2013/09/rajasthan-photography-tour-32.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div> --}}
 
-        <div class="col-12 col-md-9">
+<div class="container">
+<div class="content">
+  <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+<style>
+body {
+    font-family: 'Bubblegum Sans';font-size: 22px;
+}
+</style>
+  {{!-- <div class="row">
+  <div class="column">
+    <img src="http://darter.in//wp-content/uploads/2013/09/rajasthan-photography-tour-32.jpg"  style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  </div> --}}
+   {{!-- <img class="img-fluid mb-5 d-block mx-auto" src="http://darter.in//wp-content/uploads/2013/09/rajasthan-photography-tour-32.jpg" height="300" width="300" alt=""><a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a> --}}
+  <h2 class="red-text text-center">Discover Destination</h2>
+  <style>
+    .responsive {
+    width: 100%;
+    height: auto;
+}
+    </style>
+  {{!-- <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> --}}
+    <img src="http://darter.in//wp-content/uploads/2013/09/rajasthan-photography-tour-32.jpg" class="responsive" alt="Cinque Terre"> 
+  <div class="row">
+    <div class="col-sm-1">
+      </div>
+    <div class="well well-sm"><h3><i>Discover the land of maharaja's </i></h3>
+    <div class="text-nowrap" style="width: 8rem;">
+  This text should overflow the parent.
+</div>
+</div>
+{{!-- display icon --}}
+<style>
+  </style>
+<h2>Equal Height Columns</h2>
+<p>Make the columns match the height of the tallest column.</p>
+
+<div class="col-container">
+  <div class="col" style="background:yellow">
+    <h2>Forts</h2>
+    <p>Hello World!</p>
+    <p>Hello World!</p>
+    <p>Hello World!</p>
+    <p>Hello World!</p>
+  </div>
+
+  <div class="col" style="background:orange">
+    <h2>Wild Life</h2>
+    <p>Some other text..</p>
+    <p>Some other text..</p>
+  </div>
+</div>
+<br>
+<div class="col-container">
+  <div class="col" style="background:yellow">
+    <h2>Local places</h2>
+    <p>Hello World!</p>
+    <p>Hello World!</p>
+    <p>Hello World!</p>
+    <p>Hello World!</p>
+  </div>
+
+  <div class="col" style="background:orange">
+    <h2>{{#link-to 'SpecificPlace'}}Explore More{{/link-to}}</h2>
+    <p>Some other text..</p>
+    <p>Some other text..</p>
+  </div>
+</div>
+
+{{!-- >>> --}}
+ {{!-- <div class="row">
+   <div class="col-sm-1">
+     </div>
+    <div class="col-sm-5 col-md-5 col-lg-5 col-xs-5" style="background-color:yellow;">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <div class="col-md-5" style="background-color:pink;">
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.    
+    </div>
+    <div class="col-sm-1">
+      </div>
+  </div> --}}
+  </div>
+    <style>
+.newspaper {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+</style>
+
+
+<p><b>Note:</b> Internet Explorer 9, and earlier versions, does not support the column-count property.</p>
+
+<div class="newspaper">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+</div>
+</div>
+</div>
+
+
+
+
+{{!-- <div class="row row-offcanvas row-offcanvas-right"> --}}
+   {{!-- <div class="col-sm-12  col-md-12  col-lg-12  col-xs-12">
+      
+        <h4>Dashboard</h4>
+        <img src="http://darter.in//wp-content/uploads/2013/09/rajasthan-photography-tour-32.jpg"  alt="placeholder 960" class="img-responsive" style="" />
+     
+     
+      </div> --}}
           {{!-- <p class="float-right hidden-md-up">
             <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
           </p> --}}
-          <div class="jumbotron">   
-              <button {{action 'process'}}>feedback</button>    
-           
-  <img src="http://darter.in//wp-content/uploads/2013/09/rajasthan-photography-tour-32.jpg" class="img-thumbnail" alt="Cinque Terre" style="width:500px;height:300px"> 
-
-</div>
-</div>
-</div>
-
-
+          {{!-- <div class="jumbotron">    --}}
+              {{!-- <button {{action 'process'}}>feedback</button> integration done for feedback    --}}
+         
+   
 {{outlet}}
