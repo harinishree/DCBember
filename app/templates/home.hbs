@@ -2,58 +2,58 @@
       <div class="row row-offcanvas row-offcanvas-right">
         <div class="col-12 col-md-9">
           <div class="jumbotron">
-            <h1>Hello, Rajasthan</h1>
+            <h1>ADB</h1>
             <p>This is an example to show the potential of an offcanvas layout pattern in ember. Try some responsive-range viewport sizes to see it in action.</p>
-          <button type="button" class="btn btn-lg btn-primary" {{action "wallet"}}>My Wallet</button>
+          <button type="button" class="btn btn-lg btn-primary" {{action "wallet"}} >My Wallet</button>
 {{!-- <button type="button" class="btn btn-secondary btn-lg" >Button</button> --}}
           </div>
           <div class="row">
             <div class="col-6 col-lg-4">
-              <button {{action "placeClick"}}>place category</button>
+              {{#link-to "place"}}<h2> Rajasthan Famous Events</h2>{{/link-to}}
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
               <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div><!--/span-->
             <div class="col-6 col-lg-4">
-              <h2>Heading</h2>
+              <h2>{{#link-to "place"}}Discover Destination{{/link-to}}</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
               <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div><!--/span-->
             <div class="col-6 col-lg-4">
-              <h2>Heading</h2>
+              <h2>{{#link-to "place"}}Food{{/link-to}}</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
               <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div><!--/span-->
             <div class="col-6 col-lg-4">
-              <h2>Heading</h2>
+              <h2>{{#link-to "place"}}Travel{{/link-to}}</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
               <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
             </div><!--/span-->
             <div class="col-6 col-lg-4">
+              <h2>{{#link-to "place"}}Heading{{/link-to}}</h2>
+              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            {{!-- <div class="col-6 col-lg-4">
               <h2>Heading</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
               <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="col-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
+            </div> --}}
+          </div>
         </div><!--/span-->
 
         <div class="col-6 col-md-3 sidebar-offcanvas" id="sidebar">
   
           <div class="list-group">
-            <a href="#" class="list-group-item active">Link</a>
+            <a href="#" class="list-group-item active">udaipur</a>
+            <a href="#" class="list-group-item">jaipur</a>
+            <a href="#" class="list-group-item">jodhpur</a>
+            <a href="#" class="list-group-item">falna</a>
+            <a href="#" class="list-group-item">pali</a>
+            {{!-- <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link</a> --}}
           </div>
         </div><!--/span-->
       </div><!--/row-->
