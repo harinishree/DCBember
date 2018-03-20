@@ -3,12 +3,15 @@
     <!-- Font Awesome Icon Library -->
 
     </head>      
-         <div class="content">
+         <div class="container">
 
-<h1>Sufi Dance Event</h1>
+<h1>Sufi Songs Event</h1>
 <strong>Enjoy your tourism with this rajasthan's famous event</strong>
+<p>Music of Rajasthan originates from Rajasthan, one of the states of India and home to several important centers of Indian musical development, including Udaipur, Jodhpur and Jaipur. The region's music shares similarities both with nearby areas of India and the other side of the border, in the Pakistani province of Sindh.</p>
+<strong>place:</strong>Jaipur<br>
+<strong>Date:</strong>20 March 2018<br>
 
-<p>Resize the browser window to see the responsive effect (the columns will re-arrange its layout from four to two on screens that are less than 900px wide. <b>However</b>, on screens that are less than 600px wide, the columns will stack on top of each other instead of floating next to each other.)</p>
+<strong>Time:</strong>9:30pm 
 {{!-- test --}}
 {{!-- 
   <div class="row">
@@ -28,48 +31,110 @@
 
 {{!-- test --}}
 <div class="row">
-  <div class="column" style="background-color:whitesmoke">
-    <h1>{{#link-to 'feedback'}}Your Review{{/link-to}}</h1>
-    Give your valuable feedback to earn rewards
-    <p>Some text..</p>
+  <div class="column" style="background-color:">
+     <h1>Review here for current event</h1>
+     <button type="button" class="btn btn-primary btn-lg"{{action "feedbackpage"}}>Your Review</button>
+    {{!-- <h1>{{#link-to 'feedback'}}Your Review{{/link-to}}</h1> --}}
+    <p>Give your valuable feedback to earn rewards.</p>
   </div>
-  <div class="column" style="background-color:whitesmoke">
+  <div class="column" style="background-color:">
      <h1>Book Your Event</h1>
-     <button type="button" class="btn btn-primary btn-lg">Book event</button>
-    
+     <button type="button" class="btn btn-primary btn-lg"{{action "eventbook"}}>Book event</button>
+    <p>Book your event by clicking here....</p>
 </div>
 </div>
 <br>
 <div class="row">
   <div class="column" style="">
     <h1>Location</h1>
-    <p>Some text..</p>
+    <p>Find the location of place...</p>
   </div>
   
   <div class="column" style="">
       <h1 id="about">About this event</h1>
       <button type="button" class="btn btn-primary btn-lg">Description</button>
-     
-    <p>Some text..</p>
+    {{!-- <p>Some text..</p> --}}
 </div>
 </div>
 <br>
 <div class="row">
   
-  <div class="column" style="background-color:#ccc;">
+  <div class="column" style="background-color:;">
     <h2>{{#link-to 'eventcontact'}}Contact us{{/link-to}}</h2>
-    <p>Some text..</p>
+    <p>click here to contact with us</p>
   </div>
-  <div class="column" style="background-color:#ddd;">
-    <h2>Column 4</h2>
-    <p>Some text..</p>
+  <div class="column" style="background-color:;">
+    {{!-- <h2>Other</h2>
+    <p>Some text..</p> --}}
   </div>
 </div>
 <h1>Previous Reviews</h1>
-<div class="row">
-Top customer reviews
- <p>Tourist: <span class="glyphicon glyphicon-user"></span>Alex gomes</p>
- <br>
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.1 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+<div class="row" style="margin-left: -5px;margin-right: -20px;">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+
  <style>
 .checked {
     color: orange;
@@ -128,7 +193,7 @@ body {
 
 /* The bar container */
 .bar-container {
-    width: 100%;
+    width: 80%;
     background-color: #f1f1f1;
     text-align: center;
     color: white;
@@ -151,76 +216,11 @@ body {
     }
 }
 </style>
-
-
-<span class="heading">User Rating</span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<p>4.1 average based on 254 reviews.</p>
-<hr style="border:3px solid #f1f1f1">
-
-<div class="row">
-  <div class="side">
-    <div>5 star</div>
-  </div>
-  <div class="middle">
-    <div class="bar-container">
-      <div class="bar-5"></div>
-    </div>
-  </div>
-  <div class="side right">
-    <div>150</div>
-  </div>
-  <div class="side">
-    <div>4 star</div>
-  </div>
-  <div class="middle">
-    <div class="bar-container">
-      <div class="bar-4"></div>
-    </div>
-  </div>
-  <div class="side right">
-    <div>63</div>
-  </div>
-  <div class="side">
-    <div>3 star</div>
-  </div>
-  <div class="middle">
-    <div class="bar-container">
-      <div class="bar-3"></div>
-    </div>
-  </div>
-  <div class="side right">
-    <div>15</div>
-  </div>
-  <div class="side">
-    <div>2 star</div>
-  </div>
-  <div class="middle">
-    <div class="bar-container">
-      <div class="bar-2"></div>
-    </div>
-  </div>
-  <div class="side right">
-    <div>6</div>
-  </div>
-  <div class="side">
-    <div>1 star</div>
-  </div>
-  <div class="middle">
-    <div class="bar-container">
-      <div class="bar-1"></div>
-    </div>
-  </div>
-  <div class="side right">
-    <div>20</div>
-  </div>
-</div>
 {{!-- average ratings --}}
 <div class="content">
+  <div class="row" style="margin-left: 1px;margin-right: -15px;">
+<strong>Top Tourist Reviews</strong>
+ <p>Tourist: <span class="glyphicon glyphicon-user"></span>Jonathon simons</p>
 <h2>Star Rating</h2>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
@@ -228,28 +228,16 @@ body {
 <span class="fa fa-star"></span>
 <span class="fa fa-star"></span>
 <br>
-3.0 out of 5 starsGreat sound, HDMI issues still - NO PROGRAMMABLE REMOTE<br>
+3.0 out of 5 Sufi song event<br>
 November 11, 2016<br>
-Style: TX-RZ3100|Verified Purchase
-Onkyo continues several trends with this latest model, and makes some new trends.
+Sufi song|Verified
 
-Pros: Excellent sound, lots of clean power, THX certification, nice upgrade on streaming services, 3-year warranty and dedicated help line, nice app for remote control
+Hey,
+Guys this even is pretty awesome and place also very nice,
+i would like to say that whenever you come to RAJASTHAN pleas
+visit this place .
+Thanks
 
-Cons: NO PROGRAMMABLE REMOTE, problematic HDMI features, proprietary speaker set up doesn't seem to be as good as previous models (Audyssey).
-
-If you want a great sounding receiver, but do not use HDMI-CEC features, don't care about a programmable remote, and can afford this unit - I think you will be very happy with it.
-
-That's the summary, for details - read on:
-
-This is my third top-level Onkyo receiver (I have also owned a Denon, Yamaha and Pioneer Elite). They have always been plagued with HDMI board issues. You have to reset receiver to get them to temporarily work correctly again. Which is annoying because you then have to reprogram all your radio presets and run the speaker set-up again. Way too finicky for this price level. I was hoping between its acquiring Pioneer and creating this new line of receiver - that these types of issues have been corrected. VERY disappointed they haven't. For example: When I first set up unit, the pass-through feature worked. Sometimes late at night (or when my wife wants to watch TV) you just don't want the receiver on. You should be able to just turn the TV and source on and it passes through. Well, once I tried to get HDMI to work through zone 2, this feature stopped working. I CAN turn the receiver on and back off and then it remembers to pass it through - again way too finicky. A reset will likely fix this. Previous models had so many problem with this, they were replacing boards for free. My Yamaha worked 100% of the time (but I don't think it sounds as good).
-
-I was also super bummed to find out they decided to cheap out by not providing a programmable remote. Maybe I am the exception and most customers would rather use their phones, multiple remotes, or pay extra for a universal. I prefer one factory remote that I can set up to work most devices in my system. For a unit at this price level this is VERY disappointing. Previous model for example was priced at $2,400, this one at $3,200. For record; upon complaining, Onkyo sent me last year's programmable remote for free, but it doesn't work well with this unit as they have changed a few things.
-
-For the speaker set up, I feel like it sets things a bit flat for my taste. I suppose that is the goal.ple found this helpful. Was this review helpful to you?
-Yes
- 
-No
-Report abuse
 </div>
 </div>
      
@@ -282,8 +270,18 @@ Report abuse
     }
 }
 </style>
+<br>
+<p>Tourist: <span class="glyphicon glyphicon-user"></span>Alex</p>
+<h2>Star Rating</h2>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<br>
+{{LastReview}}
 
-
+<br>
    </div>
       
 {{outlet}}

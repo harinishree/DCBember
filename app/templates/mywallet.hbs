@@ -2,16 +2,23 @@
 {{!-- <div class="jumbotron jumbotron-fluid"> --}}
   <div class="container">
     <div class="jumbotron">
-    <h1 class="display-3">Tourist wallet</h1>
+    <h1 class="display-3">Wallet     <i class="fa fa-credit-card" style="font-size:48px;color:red"></i></h1>
     <h2><strong>Available Balance:</strong></h2>
-    <p>0.0 tokens</p>
+    {{#if IsDisable}}
+    <p>{{token}} tokens</p>
+    {{/if}}
+    {{#if IsDisable1}}
+     <p>{{uptoken}} tokens</p>
+     {{/if}}
+    
     <br>
     <br>
     <br>
-    <button type="button" class="btn btn-primary btn-lg btn-block">Redeem</button>
+    <button type="button" class="btn btn-primary btn-lg btn-block" {{action "redeem"}}> Go For Redeem</button>
     <br>
-<br>
-<button type="button" class="btn btn-secondary btn-lg btn-block">Go back to home page</button>
+    <br>
+<button type="button" class="btn btn-secondary btn-lg btn-block" {{action "homepage"}}>Go back to home page</button>
+  
     </div>
-    <p class="lead">review token.</p>
+    <p class="lead">Review token</p>
   </div>

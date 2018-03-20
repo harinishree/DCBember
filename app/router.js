@@ -17,6 +17,8 @@ Router.map(function() {
   this.route('eventcontact');
   this.route('feedback');
   this.route('mywallet');
+  this.route('redeem');
+  this.route('nominate');
 });
 
 export default Router;

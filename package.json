@@ -61,6 +61,7 @@
   "dependencies": {
     "ember-radio-buttons": "^4.0.3",
     "process-nextick-args": "^1.0.7",
+    "sweetalert": "^2.1.0",
     "util-deprecate": "^1.0.2"
   }
 }

@@ -4,85 +4,120 @@
     <h2>Review</h2>
 <ul class="list-inline">
   <li>
-    <label for="check_hate_crime" class="control-label" style="float:left;font-weight:bold !important;">Do you believe you are the victim of a crime because of your race, religion, sexual orientation, handicap, ethnicity or national origin?</label>
+    <label for="check_hate_crime" class="control-label" style="float:left;font-weight:bold !important;">Do you like this place or event?</label>
+  </li>
+  <br>
+  {{!-- >>>>>> --}}
+  {{!-- >>>>>> --}}
+   <li>
+    <label class="">
+      <input type="radio" id="showform" value="yes" name="showform" onchange="showhideForm(this.value);"/>yes
+      <input type="radio" id="showform" value="no" name="showform" onchange="showhideForm(this.value);"/>No
+            <script type="text/javascript">
+             
+                
+            </script>
+        </label>
+  </li>
+  
+  {{!-- <li>
+     <label class="">
+      <input class="radio" type="radio" name="check_hate_crime" value="0" required="">No</label>
+  </li>  --}}
+</ul>
+<br>
+<ul class="list-inline">
+  <li>
+    <label for="check_hate_crime1" class="control-label" style="float:left;font-weight:bold !important;">Are you satisfied with service?</label>
   </li>
   <br>
    <li>
     <label class="">
-      <input class="radio" type="radio" name="check_hate_crime" value="1" required="">Yes</label>
+      <input class="radio" type="radio" name="check_hate_crime1" value="1" required="">Yes</label>
   </li>
   <li>
      <label class="">
-      <input class="radio" type="radio" name="check_hate_crime" value="0" required="">No</label>
+      <input class="radio" type="radio" name="check_hate_crime1" value="0" required="">No</label>
   </li>
 </ul>
 <br>
 <ul class="list-inline">
   <li>
-    <label for="check_hate_crime" class="control-label" style="float:left;font-weight:bold !important;">Do you believe you are the victim of a crime because of your race, religion, sexual orientation, handicap, ethnicity or national origin?</label>
+    <label for="check_hate_crime2" class="control-label" style="float:left;font-weight:bold !important;">Is cleanliness were good?</label>
   </li>
   <br>
    <li>
     <label class="">
-      <input class="radio" type="radio" name="check_hate_crime" value="1" required="">Yes</label>
+      <input class="radio" type="radio" name="check_hate_crime2" value="1" required="">Yes</label>
   </li>
   <li>
      <label class="">
-      <input class="radio" type="radio" name="check_hate_crime" value="0" required="">No</label>
+      <input class="radio" type="radio" name="check_hate_crime2" value="0" required="">No</label>
   </li>
 </ul>
 <br>
 <ul class="list-inline">
   <li>
-    <label for="check_hate_crime" class="control-label" style="float:left;font-weight:bold !important;">Do you believe you are the victim of a crime because of your race, religion, sexual orientation, handicap, ethnicity or national origin?</label>
+    <label for="check_hate_crime3" class="control-label" style="float:left;font-weight:bold !important;">All necessary instructions were taken?</label>
   </li>
   <br>
    <li>
     <label class="">
-      <input class="radio" type="radio" name="check_hate_crime" value="1" required="">Yes</label>
+      <input class="radio" type="radio" name="check_hate_crime3" value="1" required="">Yes</label>
   </li>
   <li>
      <label class="">
-      <input class="radio" type="radio" name="check_hate_crime" value="0" required="">No</label>
+      <input class="radio" type="radio" name="check_hate_crime3" value="0" required="">No</label>
   </li>
 </ul>
 <br>
 <ul class="list-inline">
   <li>
-    <label for="check_hate_crime" class="control-label" style="float:left;font-weight:bold !important;">Do you believe you are the victim of a crime because of your race, religion, sexual orientation, handicap, ethnicity or national origin?</label>
+    <label for="check_hate_crime4" class="control-label" style="float:left;font-weight:bold !important;">would you like to visit again?</label>
   </li>
   <br>
    <li>
     <label class="">
-      <input class="radio" type="radio" name="check_hate_crime" value="1" required="">Yes</label>
+      <input class="radio" type="radio" name="check_hate_crime4" value="1" required="">Yes</label>
   </li>
   <li>
      <label class="">
-      <input class="radio" type="radio" name="check_hate_crime" value="0" required="">No</label>
+      <input class="radio" type="radio" name="check_hate_crime4" value="0" required="">No</label>
   </li>
 </ul>
 <br>
-<ul class="list-inline">
-  <li>
-    <label for="check_hate_crime" class="control-label" style="float:left;font-weight:bold !important;">Do you believe you are the victim of a crime because of your race, religion, sexual orientation, handicap, ethnicity or national origin?</label>
-  </li>
-  <br>
-   <li>
-    <label class="">
-      <input class="radio" type="radio" name="check_hate_crime" value="1" required="">Yes</label>
-  </li>
-  <li>
-     <label class="">
-      <input class="radio" type="radio" name="check_hate_crime" value="0" required="">No</label>
-  </li>
-</ul>
-<br>
+ {{!-- <h4>Please select your gender.</h4>
+    <p> 
+        <input type="radio" name="gender" value="male">Male
+        <label><input type="radio" name="gender" value="female">Female</label>
+    </p>
+    <p><input type="button" value="Get Value"></p>
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("input[type='button']").click(function(){
+            var radioValue = $("input[name='gender']:checked").val();
+            if(radioValue){
+                alert("Your are a - " + radioValue);
+            }
+        });
+        
+    });
+</script> --}}
+
+
 <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <label for="exampleFormControlTextarea1">Please give your valuable suggestion</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
   <br>
-  <button type="button" class="btn btn-primary btn-lg btn-block">Submit your review to earn rewards</button>
-{{!-- <button type="button" class="btn btn-secondary btn-lg btn-block">Block level button</button> --}}
+  <button type="button" class="btn btn-primary btn-lg btn-block" {{action "feedback"}}>Submit your review to earn rewards</button>
+<button type="button" class="btn btn-secondary btn-lg btn-block"{{action "gotowallet"}}>Go to mywallet</button>
 <br>
+
 </div>
+
+
+
+

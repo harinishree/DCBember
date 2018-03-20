@@ -5,6 +5,7 @@ export default Ember.Controller.extend({
         
             wallet:function(){
                 this.transitionToRoute('mywallet');
+                swal("Way to Wallet", "check balance", "success");
             },
     placeClick:function(){
 
